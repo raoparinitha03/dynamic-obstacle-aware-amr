@@ -1,0 +1,28 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Gazebo logs
+.gazebo/
+
+# Python virtual environments
+venv/
+.venv/
+
+# Large ML artifacts
+*.pt
+*.onnx
+*.engine
