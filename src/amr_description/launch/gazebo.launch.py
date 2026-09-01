@@ -31,7 +31,7 @@ def generate_launch_description():
     world_file = os.path.join(
         package_share,
         'worlds',
-        'empty.world'
+        'warehouse.world'
     )
 
     robot_description = xacro.process_file(
