@@ -499,7 +499,6 @@
       <odometry_topic>odom</odometry_topic>
 
     </plugin>
-
   </gazebo>
 
 </robot>
