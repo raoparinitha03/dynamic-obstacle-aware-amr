@@ -456,6 +456,146 @@
       </plugin>
 
     </model>
+        <!-- ========================= -->
+    <!-- DYNAMIC OBSTACLE 2 -->
+    <!-- ========================= -->
+
+    <model name="dynamic_obstacle_2">
+
+      <static>false</static>
+
+      <pose>2.5 -1.0 0.5 0 0 0</pose>
+
+      <link name="base_link">
+
+        <inertial>
+          <mass>5.0</mass>
+          <inertia>
+            <ixx>0.1</ixx>
+            <iyy>0.1</iyy>
+            <izz>0.1</izz>
+          </inertia>
+        </inertial>
+
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.6 0.6 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.6 0.6 1.0</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>0.1 0.1 0.9 1</ambient>
+          </material>
+        </visual>
+
+      </link>
+
+      <plugin name="dynamic_obstacle_2_controller"
+              filename="libgazebo_planar_move_plugin.so">
+
+        <robot_namespace>/dynamic_obstacle_2</robot_namespace>
+
+        <robot_frame>base_link</robot_frame>
+
+        <odometry_frame>odom</odometry_frame>
+
+        <odometry_topic>/dynamic_obstacle_2/odom</odometry_topic>
+
+        <command_topic>/dynamic_obstacle_2/cmd_vel</command_topic>
+
+        <control_mode>position</control_mode>
+
+        <publish_odometry>false</publish_odometry>
+        <publish_tf>false</publish_tf>
+        <publish_imu>false</publish_imu>
+
+        <ground_truth>true</ground_truth>
+
+        <update_rate>50</update_rate>
+        <publish_rate>30</publish_rate>
+
+      </plugin>
+
+    </model>
+        <!-- ========================= -->
+    <!-- DYNAMIC OBSTACLE 3 -->
+    <!-- ========================= -->
+
+    <model name="dynamic_obstacle_3">
+
+      <static>false</static>
+
+      <pose>7 0 0.5 0 0 0</pose>
+
+      <link name="base_link">
+
+        <inertial>
+          <mass>5.0</mass>
+          <inertia>
+            <ixx>0.1</ixx>
+            <iyy>0.1</iyy>
+            <izz>0.1</izz>
+          </inertia>
+        </inertial>
+
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.6 0.6 1.0</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.6 0.6 1.0</size>
+            </box>
+          </geometry>
+
+          <material>
+            <ambient>0.1 0.8 0.1 1</ambient>
+          </material>
+        </visual>
+
+      </link>
+
+      <plugin name="dynamic_obstacle_3_controller"
+              filename="libgazebo_planar_move_plugin.so">
+
+        <robot_namespace>/dynamic_obstacle_3</robot_namespace>
+
+        <robot_frame>base_link</robot_frame>
+
+        <odometry_frame>odom</odometry_frame>
+
+        <odometry_topic>/dynamic_obstacle_3/odom</odometry_topic>
+
+        <command_topic>/dynamic_obstacle_3/cmd_vel</command_topic>
+
+        <control_mode>position</control_mode>
+
+        <publish_odometry>false</publish_odometry>
+        <publish_tf>false</publish_tf>
+        <publish_imu>false</publish_imu>
+
+        <ground_truth>true</ground_truth>
+
+        <update_rate>50</update_rate>
+        <publish_rate>30</publish_rate>
+
+      </plugin>
+
+    </model>
 
   </world>
 
