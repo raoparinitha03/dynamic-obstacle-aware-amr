@@ -42,6 +42,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'dynamic_controller=amr_description.dynamic_controller:main'
         ],
     },
 )
