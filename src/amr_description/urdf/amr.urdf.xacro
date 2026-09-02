@@ -484,7 +484,6 @@
       <max_wheel_acceleration>5.0</max_wheel_acceleration>
 
       <!-- Odometry -->
-      <odometry_source>world</odometry_source>
 
       <publish_odom>true</publish_odom>
       <publish_odom_tf>true</publish_odom_tf>
